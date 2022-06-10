@@ -352,6 +352,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1022254999576825794}
+  - component: {fileID: 6980888979490814715}
   m_Layer: 0
   m_Name: Weapons
   m_TagString: Untagged
@@ -370,12 +371,25 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 43522643282623161}
-  - {fileID: 745481950433052927}
   - {fileID: 1686493057725715952}
+  - {fileID: 745481950433052927}
+  - {fileID: 43522643282623161}
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6980888979490814715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324174689794854875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d729144e0f42fe14883d9448daa9d3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 1
 --- !u!1001 &2374640610201681183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,7 +399,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: ada2587319194f542957a8c2ae277cb9, type: 3}
       propertyPath: m_LocalScale.x
@@ -490,6 +504,7 @@ MonoBehaviour:
   muzzleFlash: {fileID: 6877413736959728760}
   hitEffect: {fileID: 2879098174743270811, guid: 5cf121152c859f54d82dfe988416174d, type: 3}
   ammoSlot: {fileID: 8634407413887527922}
+  timeBetweenShots: 0.5
 --- !u!1001 &3041776322130300761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -605,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
     - target: {fileID: 2337074158996965286, guid: 97122f6714eb5f841825006cbd88c10b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2337074158996965286, guid: 97122f6714eb5f841825006cbd88c10b, type: 3}
       propertyPath: m_LocalPosition.x
