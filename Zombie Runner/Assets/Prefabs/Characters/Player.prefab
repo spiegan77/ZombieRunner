@@ -342,7 +342,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c788e8b5bafefcb41a8f977d31fea5d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ammoAmount: 10
+  ammoSlots:
+  - AmmoType: 0
+    ammoAmount: 10
+  - AmmoType: 1
+    ammoAmount: 20
+  - AmmoType: 2
+    ammoAmount: 2
 --- !u!1 &7324174689794854875
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,7 +510,8 @@ MonoBehaviour:
   muzzleFlash: {fileID: 6877413736959728760}
   hitEffect: {fileID: 2879098174743270811, guid: 5cf121152c859f54d82dfe988416174d, type: 3}
   ammoSlot: {fileID: 8634407413887527922}
-  timeBetweenShots: 0.5
+  ammoType: 2
+  timeBetweenShots: 2
 --- !u!1001 &3041776322130300761
 PrefabInstance:
   m_ObjectHideFlags: 0
